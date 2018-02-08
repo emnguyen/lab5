@@ -11,8 +11,8 @@ $(document).ready(function() {
 function initializePage() {
 	console.log("Javascript connected!");
 
-	$('#friend-container a').click(function() {
-		event.preventDefault();
+	$('#friend-container a').click(function(e) {
+		e.preventDefault();
 		$(this).text(anagrammedName($(this).text()));
 	});
 }
